@@ -20,9 +20,14 @@ let = impares = [];
     impares.push(numero)
  }
  pares.sort((a,b) => a-b);
+ impares.sort((a,b) => a-b);
  }
+ let paresDesc = [...pares].reverse();
+ let imparesDesc = [...impares].reverse();
 
     //SAÍDA
-document.write(`Números ordenados: ${pares.join(" - ")} <br>`);
-document.write(`Números ordenados: ${impares.join(" - ")} <br>`);
+document.write(`Números pares crescente: ${pares.join(" - ")} <br>`);
+document.write(`Números pares decrescente: ${paresDesc.join(" - ")} <br>`);
+document.write(`Números impares crescente: ${impares.join(" - ")} <br>`);
+document.write(`Números impares decrescente: ${imparesDesc.join(" - ")} <br>`);
 </script>

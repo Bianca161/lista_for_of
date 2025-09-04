@@ -10,17 +10,15 @@
 
    //PROCESSAMENTO
    let nomesComVogais = [];
-   let vogais = (A, E, I, O, U);
+   let vogais = ["A", "E", "I", "O", "U"];
 
    for (let nome of listaDeNomes) {
-      if (vogais === listaDeNomes) {
-         
-      } else {
-         
+      if (vogais.includes(nome[0].toUpperCase())) {
+         nomesComVogais.push(nome);
       }
    }
-
+   nomesComVogais.sort();
 
    //SAÍDA
-
+   document.write(`Lista em ordém alfabética: ${nomesComVogais.join(" - ")}`);
 </script>

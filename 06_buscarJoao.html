@@ -9,7 +9,16 @@
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
 
     //PROCESSAMENTO
-    
-    //SAÍDA
+    let nomesJoao = [];
 
+    for (let nome of listaDeNomes) {
+
+        if (nome.includes("João") || nome.includes("Joao")) {
+            nomesJoao.push(nome);
+        }
+    }
+    nomesJoao.sort();
+
+    //SAÍDA
+    document.write(`Lista final: ${nomesJoao.join(" - ")} `)
 </script>

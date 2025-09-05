@@ -10,16 +10,19 @@
    let nome= ("Informe se você é (M) masculino ou (F) feminino");
 
     //PROCESSAMENTO
-  let femMas = [];
+  let masculino = [];
+  let feminino = [];
     
   for (let nome of listaDeNomes) {
-
-    if (femMas) {
-        
-    } else {
-        
-    }
-  }
+  let resposta = prompt(`O nome "${nome}" é Masculino (M) ou Feminino (F)?`);
+  if (resposta === "M" || resposta === "m") {
+    listaMasculino.push(nome);
+  } else if (resposta === "F" || resposta === "f") {
+            listaFeminino.push(nome);
+ } else {
+       alert("Resposta inválida! Por favor, digite apenas M ou F.");
+      
     //SAÍDA
-
+ alert(`Nomes Masculinos: ${listaMasculino.join(", ")}\nNomes Femininos: ${listaFeminino.join(", ")}`);
 </script>
+
